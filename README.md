@@ -1,28 +1,11 @@
-# JS Chat Website 💬 👾
+simple chat app using react js for frontend and Python with Fast Api in bachend
+and "Chatengine.io" for the messaging and user registration
 
-![JS website chat GIF](https://blog.chatengine.io/assets/per-post/nodejs-react-demo.gif)
+backend is just one file main.py
+where we handle the connection to Chatengine Api and the authentication
 
-This is a chat UI built entirely with Javascript (React specifically) 😃
+the frontend part
 
-All you need to run the webstie is NPM installed on your computer!
-
-To run the website, clone the director, `cd` into it with your terminal:
-
-## 1. Add `.env` file
-
-Within your `.env` file, add the following with your [ChatEngine.io](ChatEngine.io) Project ID (instead of `XXXX`)
-
-```
-VITE_CHAT_ENGINE_PROJECT_ID=XXXX
-```
-
-## 2. Run the code!
-
-```
-npm install # to install all packages
-npm run dev # to start the website
-```
-
-Then, your webstie will be running at http://localhost:5173/
-
-Done 🎉
+is just two components one for authentication, The other for messaging
+we render them conditionally by defining a user state which could be modified
+with a request to our project and then render the messaging
